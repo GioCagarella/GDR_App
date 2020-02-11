@@ -1,23 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
+  <ion-toolbar color="primary">
     <ion-title>Multi GDR Manager</ion-title>
-  </ion-toolbar>
-
-  <ion-toolbar>
-    <ion-title>Menù Principale</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card routerLink="lexarcana">
-    <img src="assets/img/lexarcana.jpg" />
-  </ion-card>
-  <ion-card routerLink="thewitcher">
-    <img src="assets/img/theWitcher.jpg" />
-  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="8" offset-md="2">
+        <ion-toolbar>
+          <ion-title>Menù Principale</ion-title>
+        </ion-toolbar>
+        <ion-card routerLink="lexarcana">
+          <img src="assets/img/lexarcana.jpg" />
+        </ion-card>
+        <ion-card routerLink="thewitcher">
+          <img src="assets/img/theWitcher.jpg" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
 
 
