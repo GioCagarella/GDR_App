@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class HomePage {
   text = 'CIAO';
 
-  onClick(){
+  onClick() {
     this.text = 'BEBBO';
   }
   constructor() {}

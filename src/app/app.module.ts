@@ -8,11 +8,23 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+import { LexArcanaComponent } from './home/lex-arcana/lex-arcana.component';
+
+const routes: Routes = [
+  {
+      path: 'home/lexarcana',
+      pathMatch: 'full',
+      component: LexArcanaComponent
+  },
+
+
+];
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LexArcanaComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [
     StatusBar,
     SplashScreen,
