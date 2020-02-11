@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { LexArcanaComponent } from './home/lex-arcana/lex-arcana.component';
+import { TheWitcherComponent } from './home/the-witcher/the-witcher.component';
 
 const routes: Routes = [
   {
@@ -17,12 +18,17 @@ const routes: Routes = [
       pathMatch: 'full',
       component: LexArcanaComponent
   },
+  {
+    path: 'home/thewitcher',
+    pathMatch: 'full',
+    component: TheWitcherComponent
+  }
 
 
 ];
 
 @NgModule({
-  declarations: [AppComponent, LexArcanaComponent],
+  declarations: [AppComponent, LexArcanaComponent, TheWitcherComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [
