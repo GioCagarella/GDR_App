@@ -7,11 +7,7 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  text = 'CIAO';
-
-  onClick() {
-    this.text = 'BEBBO';
-  }
+  
   constructor() {}
 
 }

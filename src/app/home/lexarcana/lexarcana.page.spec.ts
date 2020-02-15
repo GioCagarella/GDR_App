@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { LexArcanaComponent } from './lex-arcana.component';
+import { LexarcanaPage } from './lexarcana.page';
 
-describe('LexArcanaComponent', () => {
-  let component: LexArcanaComponent;
-  let fixture: ComponentFixture<LexArcanaComponent>;
+describe('LexarcanaPage', () => {
+  let component: LexarcanaPage;
+  let fixture: ComponentFixture<LexarcanaPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LexArcanaComponent ],
+      declarations: [ LexarcanaPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LexArcanaComponent);
+    fixture = TestBed.createComponent(LexarcanaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
