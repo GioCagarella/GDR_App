@@ -9,6 +9,7 @@ const routes: Routes = [
     path: '',
     component: SchedapgPage,
     children: [
+      { path: '', redirectTo: 'tabstat', pathMatch: 'full' },
       {
          path: 'tabstat',
          loadChildren: () => import('./tabstat/tabstat.module').then( m => m.TabstatPageModule)

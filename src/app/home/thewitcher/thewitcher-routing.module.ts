@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ThewitcherPage
+  },
+  {
+    path: 'schedapg',
+    loadChildren: () => import('./schedapg/schedapg.module').then( m => m.SchedapgPageModule)
   }
 ];
 
