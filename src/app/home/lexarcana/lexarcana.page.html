@@ -1,9 +1,46 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>lexarcana</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="8" offset-md="2">
+          <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>Qualifica</ion-card-subtitle>
+                <ion-card-title>Nome Personaggio</ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                Keep close to Nature's heart... and break clear away, once in awhile,
+                and climb a mountain or spend a week in the woods. Wash your spirit clean.
+              </ion-card-content>
+              <ion-tabs>
+                <ion-tab-bar slot="bottom">
+                  <ion-tab-button routerLink="schedapg">
+                    <ion-icon name="person"></ion-icon>
+                  </ion-tab-button>
+                  <ion-tab-button>
+                    <ion-icon name="pencil"></ion-icon>
+                  </ion-tab-button>
+                  <ion-tab-button>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </ion-tab-button>
+                </ion-tab-bar>
+              </ion-tabs>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,113 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Riepilogo</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="paper-plane" slot="start"></ion-icon>
+          <ion-label>Virtutes</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <ion-label>Peritiae</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label>Abilita</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="trash" slot="start"></ion-icon>
+          <ion-label>Inventario</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label>Spam</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Dettagli Generali</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col no-padding>
+            <ion-img src="assets/img/mago.jpg">
+            </ion-img>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>NOME</strong></h2>
+                <h3>Wulfgar</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>PROVINCIA</strong></h2>
+                <h3>Germania</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>LINGUAGGI</strong></h2>
+                    Germanico<br>Latino<br>Celtico
+              </ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>ETA</strong></h2>
+                   31
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>SESSO</strong></h2>
+                    Uomo
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>QUALIFICA</strong></h2>
+                    Guerriero
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label text-center>
+                <h2><strong>GRADO</strong></h2>
+                    Gregarius
+              </ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </div>
+</ion-app>
+
+<script>
+  async function openMenu() {
+    await menuController.open();
+  }
+</script>
+

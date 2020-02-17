@@ -7,7 +7,12 @@ const routes: Routes = [
   {
     path: '',
     component: LexarcanaPage
+  },
+  {
+    path: 'schedapg',
+    loadChildren: () => import('./schedapg/schedapg.module').then( m => m.SchedapgPageModule)
   }
+
 ];
 
 @NgModule({
