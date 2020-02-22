@@ -5,18 +5,14 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid>
+  <ion-grid class="ion-no-padding">
     <ion-row>
       <ion-col size-md="8" offset-md="2">
         <ion-toolbar>
           <ion-title>Menù Principale</ion-title>
         </ion-toolbar>
-        <ion-card routerLink="lexarcana">
-          <img src="assets/img/lexarcana.jpg" />
-        </ion-card>
-        <ion-card routerLink="thewitcher">
-          <img src="assets/img/theWitcher.jpg" />
-        </ion-card>
+          <ion-img src="assets/img/lexarcana.jpg" routerLink="lexarcana" class="no-padding"></ion-img>
+          <ion-img src="assets/img/theWitcher.jpg" routerLink="thewitcher"></ion-img>
       </ion-col>
     </ion-row>
   </ion-grid>
