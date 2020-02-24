@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThewitcherService } from "./thewitcher.service";
 
 @Component({
   selector: 'app-thewitcher',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThewitcherPage implements OnInit {
 
-  constructor() { }
+  dataPg = []
+
+  constructor() { 
+    const service = new ThewitcherService();
+    this.dataPg = service.getDatapg();
+  }
 
   ngOnInit() {
   }
 
-}
+  
+  }

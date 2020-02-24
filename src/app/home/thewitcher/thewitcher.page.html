@@ -7,50 +7,46 @@
 </ion-header>
 
 <ion-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col size-md="8" offset-md="2">
-          <ion-card>
-              <ion-card-header>
-                <ion-card-subtitle>Qualifica</ion-card-subtitle>
-                <ion-card-title>Nome Personaggio</ion-card-title>
-              </ion-card-header>
-            
-              <ion-card-content>
-                Keep close to Nature's heart... and break clear away, once in awhile,
-                and climb a mountain or spend a week in the woods. Wash your spirit clean.
-              </ion-card-content>
-
-              <ion-card no-margin>
-                <ion-row>
-                <ion-col>
-                  <ion-item lines="none">
-                    <ion-button fill="clear" expand="full" style="width:100%; height:100%" routerLink="schedapg">
-                      <ion-icon name="person" slot="icon-only"></ion-icon>
-                    </ion-button>
-                  </ion-item>
-                </ion-col>
-                <ion-col>
-                  <ion-item lines="none">
-                    <ion-button fill="clear" expand="full" style="width:100%; height:100%" routerLink="schedapg">
-                      <ion-icon name="pencil" slot="icon-only"></ion-icon>
-                    </ion-button>
-                  </ion-item>
-                </ion-col>
-                <ion-col>
-                  <ion-item lines="none">
-                    <ion-button fill="clear" expand="full" style="width:100%; height:100%" routerLink="schedapg">
-                      <ion-icon name="trash" slot="icon-only"></ion-icon>
-                    </ion-button>
-                  </ion-item>
-                </ion-col>
-                </ion-row>
-              </ion-card>
-
-            </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+  <ion-grid>
+    <ion-row *ngFor="let pg of dataPg">
+      <ion-col size-md="8" offset-md="2">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle> {{pg.id}} </ion-card-subtitle>
+            <ion-card-title> {{pg.name}} </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{pg.bio}}
+          </ion-card-content>
+          <ion-card no-margin>
+            <ion-row>
+              <ion-col>
+                <ion-item lines="none">
+                  <ion-button fill="clear" expand="full" style="width:100%; height:100%" routerLink="schedapg">
+                    <ion-icon name="person" slot="icon-only"></ion-icon>
+                  </ion-button>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item lines="none">
+                  <ion-button fill="clear" expand="full" style="width:100%; height:100%" routerLink="schedapg">
+                    <ion-icon name="pencil" slot="icon-only"></ion-icon>
+                  </ion-button>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item lines="none">
+                  <ion-button fill="clear" expand="full" style="width:100%; height:100%" routerLink="schedapg">
+                    <ion-icon name="trash" slot="icon-only"></ion-icon>
+                  </ion-button>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 
 <ion-footer>
