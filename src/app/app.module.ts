@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
+import { ThewitcherService } from './home/thewitcher/thewitcher.service';
 
 const routes: Routes = [
 
@@ -21,7 +22,7 @@ const routes: Routes = [
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, ThewitcherService
   ],
   bootstrap: [AppComponent]
 })
