@@ -7,7 +7,10 @@ export class ThewitcherService {
 
   constructor() { }
 
-  
+  /**
+   * creazione di un metodo che ritorna un array di oggetti che verranno passati
+   * alla varibile "dataPg" in thewitcher.page.ts
+   */ 
   getDatapg() {
     return [
         {

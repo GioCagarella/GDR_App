@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ThewitcherPage } from './thewitcher.page';
 
+/**
+ * creazone routing di navigazione: caricamento in lazyloading della path TheWitcherPage
+ * e del modulo schedaPg
+ */
 const routes: Routes = [
   {
     path: '',

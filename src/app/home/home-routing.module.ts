@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes} from "@angular/router";
 import { HomePage } from './home.page';
 
+/**
+ * creazione route di navigazione: caricamento lazyloading della path di home e dei moduli LeXArcana, TheWitcher
+ */
 const routes: Routes = [
   {
     path: '',

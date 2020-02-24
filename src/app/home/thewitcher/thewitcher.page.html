@@ -8,6 +8,10 @@
 
 <ion-content>
   <ion-grid>
+    <!--creazione ciclo for per leggere i valori in thewitcher.page.ts dove:
+    pg = varibile arbitraria
+    dataPg = varibile array contente i dati e dichiarata in thewitcher.page.ts
+    il binding dei valori si fa usando la variabile arbitraria dichiara su *ngFor-->
     <ion-row *ngFor="let pg of dataPg">
       <ion-col size-md="8" offset-md="2">
         <ion-card>
